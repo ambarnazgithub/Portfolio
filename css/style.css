@@ -43,7 +43,14 @@ body{
     background: #fca61f;
     color: #fff;
     font-size: 1.2rem;
+    text-decoration: none  !important;
 }
+.c-btn:hover{
+    background: #6f34fe;
+    color: #fff;
+   
+}
+
 /* styling home section starts */
 .home{
     background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
@@ -146,10 +153,16 @@ body{
     background-color: rgb(234, 234, 249);
 }
 .progress-card{
-    padding: 12% 10% 10% 15%;
+    width: 100%;
     background-color: #fff;
     text-align: center;
     border-radius: 10%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 25px 20px 15px 20px ;
+    /* Adjust padding */
 }
 .progress-card:hover{
     transform: scale(1.1,1.1);
@@ -193,10 +206,13 @@ body{
 .text{
     font-size: 1.2rem;
     font-weight: 500;
+    text-align: center;
 }
 .heading p{
     font-size: 1.3rem;
 }
+
+
 
 /* portfolio section starts */
 #myBtnContainer{
@@ -308,7 +324,7 @@ body{
     color: #6f34fe;
 }
 /* contact section starts */
-.contact{
+/* .contact{
     background-color: #f3f3f3;
 }
 .contact-details i{
@@ -326,7 +342,181 @@ body{
 .contact-form .form-control{
     padding: 10px 10px;
     width: 80%;
+} */
+ .contact.section {
+  padding: 10px 0;
 }
+
+.contact__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact__content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.contact__title {
+  font-size: 24px;
+  color: #3f396d;
+  margin-bottom: 20px;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color:  #fff;
+  border-radius: 10px;
+  color: #3f396d;
+  height: 150px;
+  flex-direction: column;
+}
+
+.orange-icon {
+    margin-bottom: 10px;
+        font-size: 28px;
+        color: #eba016;
+        margin-right: 15px;
+      
+}
+
+ 
+
+.contact__card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contact__card-data {
+  font-size: 14px;
+}
+
+.contact__button {
+  color: #fca61f;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact__form-div {
+  width: 100%;
+}
+
+.contact__form-tag {
+  display: block;
+  font-size: 16px;
+  color: #3f396d;
+  margin-bottom: 5px;
+}
+
+.contact__form-input,
+.contact__form-text textarea {
+  width: 100%;
+  padding: 10px;
+  background-color:#fff ;
+  border: 1px solid #fca61f;
+  border-radius: 5px;
+color: #211e39;
+}
+
+.contact__form-input:focus,
+.contact__form-text textarea:focus {
+  border-color: #fca61f;
+  outline: none;
+}
+
+.button.contact__button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #3f396d;
+  border: 1px solid #fca61f;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: #fca61f;
+}
+
+.button.contact__button:hover {
+  background-color: #fca61f;
+  border: none;
+  color: #1f1f1f;
+}
+.txt-a {
+  height: 173px;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .contact__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact__title {
+    font-size: 20px;
+  }
+  .contact__content {
+    margin: auto;
+  }
+  .contact__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact__card {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contact__card-icon {
+    margin-bottom: 10px;
+  }
+}
+/* scroll bar  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #565656;
+  border-radius: 20px;
+}
+
+.social-media a {
+  border: 1px solid #3f396d;
+  border-radius: 50%;
+  padding: 5px;
+  text-decoration: none;
+  color: #3f396d;
+  font-size: 30px;
+  margin-right: 5px;
+}
+.social-media a:hover {
+  color: #1f1f1f;
+  background-color: #3f396d;
+}
+
 
 /* footer section starts */
 footer{
